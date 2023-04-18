@@ -26,34 +26,34 @@
 
         <div class='form-container'>
             <h2>Sign-Up Today!</h2>
-            <p>Please fill out all the boxes below and press submit when completed to register!</p>
-            <form action="">
+            <p>Please fill out all the boxes below and press submit when completed to register! Required fields are followed by <span>*</span>.</p>
+            <form action="" method="POST">
                 <div class="form-columnOne">
                     <div class="form-row">
-                        <label for="firstName">First Name</label>
-                        <input type="text" id="firstName" name="firstName">
+                        <label for="firstName">First Name <span>*</span></label>
+                        <input type="text" id="firstName" name="firstName" required>
                     </div>
                     <div class="form-row">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email">
+                        <label for="email">Email <span>*</span></label>
+                        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
                     </div>
                     <div class="form-row">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password">
+                        <label for="password">Password <span>*</span></label>
+                        <input type="password" id="password" name="password" required>
                     </div>
                 </div>
                 <div class="form-columnTwo">
                     <div class="form-row">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" id="lastName" name="lastName">
+                        <label for="lastName">Last Name <span>*</span></label>
+                        <input type="text" id="lastName" name="lastName" required>
                     </div>
                     <div class="form-row">
                         <label for="phoneNumber">Phone Number</label>
-                        <input type="tel" id="phoneNumber" name="phoneNumber">
+                        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="XXX-XXX-XXXX">
                     </div>
                     <div class="form-row">
-                        <label for="confirmPassword">Confirm Password</label>
-                        <input type="password" id="confirmPassword" name="confirmPassword">
+                        <label for="confirmPassword">Confirm Password <span>*</span></label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
                     </div>
                 </div>
             </form>
